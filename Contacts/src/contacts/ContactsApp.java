@@ -98,7 +98,7 @@ public class ContactsApp extends Application {
                 String[] contactString = contactReader.nextLine().split(",");
                 Contact newContact = new Contact(contactString[0], contactString[1], contactString[2], contactString[3]);
                 contacts.add(newContact);
-                names.add(newContact.getFirstName() + " " + newContact.getLastName());
+                names.add(newContact.firstName + " " + newContact.getLastName());
             }
         } catch (FileNotFoundException ex) {
             System.err.print("Contact list csv not found");
